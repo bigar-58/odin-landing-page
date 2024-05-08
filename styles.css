@@ -1,164 +1,194 @@
 body {
-    display: flex;
-    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 0;
     margin: 0;
+    text-align: center;
+    font-family: "Roboto", serif;
 }
 
-/*CSS styles for the header section of the site*/
-
-.header {
-    width: 100%;
-    background: #1f2937;
-    color: white;
-    padding: 40px;
-    box-sizing: border-box;
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
+
+/* Header Section*/
+/* Navigation Bar */
 
 .top-bar {
     display: flex;
-    justify-content:space-evenly;
+    color: #F9FAF8; /*Specified color in the project*/
+    background-color: #1F2937; 
+    padding: 24px 0 24px 96px; 
     align-items: center;
 }
 
-.logo img{
-    width: auto;
+.logo {
+    width: 84px;
+    height: 84px;
+    margin-right: auto; /*Push the links to the right side of the navbar*/
+
 }
 
-.navigation ul {
-    list-style: none;
-    padding: 0px;
+.navigation {
     display: flex;
-    gap: 16px;
+    margin-left: auto;
+    padding: 0 96px 0 0;
 }
 
-.main_header {
+.navigation a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Roboto', serif;
+}
+
+/* Main Header Content*/
+
+.main-header {
     display: flex;
-    justify-content: space-evenly;
+    color: #F9FAF8;
+    background-color: #1F2937;
     align-items: center;
+    justify-content: center;
+    padding: 84px;
+}
+
+.header-content {
+    flex-basis: 256px; /*Set the header content base before it flexes*/
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 52px;
+    font-family: 'Robot', serif;
+
 }
 
 .header-content h2 {
-    margin-bottom: 0;
-    font-size: 36px;
-    text-shadow: 0px 1px, 1px 0px, 1px 0px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+    font-family: 'Robot', serif;
 }
+
 .header-content p {
-    margin-top: 0;
-    padding: 0px;
-    color: rgb(211, 211, 211);
+    font-family: 'Roboto', serif;
+    opacity: 0.8;
 }
-.header-content button{
-    margin-top: 10px;
-    background-color: #3a77da;
-    color: white;
+
+
+
+.header-content button {
+    display: block;
+    text-align: center;
+    width: 104px;
+    border: none;
+    background: #3882f6;
+    padding: 8px;
     border-radius: 8px;
-    font-size: 12px;
-    padding: 5px 8px;
-}
-
-a {
+    color: #fff;
     text-decoration: none;
-    color: rgb(211, 211, 211);
+    font-weight: bold;
 }
 
-/* Styles for the content section*/
+.header-image img {
+    width: 512px;
+    height: 384px;
+}
+
+/* Content Section */
 
 .content {
-    display: flex;
     align-items: center;
-    flex: 1;
-}
-
-.title {
-    text-align: center;
 }
 
 .deck {
-    padding: 32px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
-.card {
-    padding: 16px;
+.card img {
+    width: 248px;
+    height: 248px;
+    object-fit: contain;
+    border-radius: 16px;
+    margin: 8px 24px 0px 24px;
+    border: 2px solid black;
 }
 
-/* Styles for the quotes section*/
+/* Quotes Section*/
 .quotes {
-    background: #e5e7eb;
     display: flex;
     flex-direction: column;
-    padding: 32px 48px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #e5e7eb;
+    padding: 0 156px;
 }
 
-.quote-text {
+.quotes p {
+    font-size: 36px;
+    color: #1F2937;
     font-style: italic;
-    font-size: 18px;
-    color: #333;
-    text-align: center;
-    margin: 10px;
-
+    font-weight: lighter;
+    font-family: 'Roboto', serif;
 }
 
-.quote-author {
-    font-size: 14px;
-    text-align: center;
-    align-self: flex-end;
-    width: 100%;
-
+.quotes b {
+    padding: 0 24px 32px 0px;
+    text-align: right;
+    font-family: "Roboto", serif;
 }
-/* Styles for the signup section*/
+
+/* Sign Up Section*/
+
 .signup {
-    background-color: #3a77da;
+    background-color: #3882f6;
+    margin: 56px 192px;
+    padding: 8px 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 8px;
-    padding: 12px 24px;
-    margin: 24px auto;
-    min-width: 60%;
+    border-color: none;
+
 }
 
-.signup-text-container {
-    flex-grow: 1;
+.signup-item {
+    flex: 1;
+    font-family: 'Roboto', serif;
 }
 
-.signup-text{
-    font-size: 18px;
-    margin-bottom: 2px;
-    color: white;
+.signup-text {
+    text-align: left;
+    color: #fff;
+    padding: 0;
+    margin: 32px 0 0 56px;
+    font-family: 'Roboto', serif;
 }
 
 .signup-subtext {
-    margin-top:0px;
-    font-size: 12px;
-    color: rgb(211, 211, 211);
+    color: #fff;
+    opacity: 0.8;
+    margin: 4px 32px 32px 56px;
+    text-align: left;
 }
 
 .signup-button {
-    background-color: #3a77da;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 5px;
-    font-size: 14px;
-    border-color: white;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 8px;
+    background-color: #3882f6;
+    padding: 4px 24px;
+    font-size: 16px;
+
 }
 
-
-
-/* Styles for the footer section*/
+/* Footer Section*/
 
 .footer {
-    background: #1f2937;
-    color: rgb(211, 211, 211);
-    text-align: center;
+    background-color: #1F2937;
+    color: #fff;
+    font-family: 'Roboto', serif;
     padding: 16px;
-    font-size: 12px;
 }
